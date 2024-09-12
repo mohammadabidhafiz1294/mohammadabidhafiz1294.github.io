@@ -1,14 +1,14 @@
-baseURL: https://aafu.pages.dev/
+baseURL: https://mohammadabidhafiz1294.github.io/
 languageCode: en-us
 build:
   writeStats: true
 params:
-  title: aafu theme
-  author: Darshan Baral
-  description: Website title
+  title: PROTFOLIO
+  author: Mohammad Abid Hafiz
+  description: Protfolio site
   copyright: >-
     powered by [hugo](https://gohugo.io/) & deployed on
-    [Cloudflare](https://www.cloudflare.com/)
+    [GitHub-pages](https://www.github.com/)
   theme:
     mainTheme: dark
     showAttribute: true
@@ -24,9 +24,9 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
-    tagline: Title
-    location: "City Name, ST"
+    name: "Mohammad Abid Hafiz"
+    tagline: "DevOps Engineer"
+    location: "Dhaka, Bangladesh"
     photo: profile.jpg
   social:
     title: Links
