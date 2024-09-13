@@ -7,11 +7,10 @@ params:
   author: Mohammad Abid Hafiz
   description: Protfolio site
   copyright: >-
-    powered by [hugo](https://gohugo.io/) & deployed on
-    [GitHub-pages](https://www.github.com/)
+    © 2024 [mohammadabidhafiz1294](https://x.com/MDabidhafiz1294). Some rights reserved.
   theme:
     mainTheme: dark
-    showAttribute: true
+    showAttribute: false
     singlePage: false
   favicons:
     use: true
@@ -25,14 +24,14 @@ params:
 
   profile:
     name: "Mohammad Abid Hafiz"
-    tagline: "DevOps Engineer"
+    # tagline: "DevOps Engineer"
     location: "Dhaka, Bangladesh"
     photo: profile.jpg
   social:
     title: Links
     list:
       - icon: fab fa-linkedin-in
-        url: "#"
+        url: "https://www.linkedin.com/in/mohammadabidhafiz1294/"
         title: LinkedIn
       - icon: fab fa-stack-overflow
         url: "#"

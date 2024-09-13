@@ -1317,7 +1317,7 @@ blockquote {
 }
 .dark .dark\:bg-green-700 {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(28 176 88 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity)) !important;
 }
 .dark .dark\:prose-invert {
   --tw-prose-body: var(--tw-prose-invert-body);
@@ -1377,9 +1377,9 @@ blockquote {
 .dark .dark\:prose-invert :where(code):not(:where([class~="not-prose"] *)) {
   color: #e5e7eb;
 }
-.dark .dark\:text-green-300 {
+.dark .dark\:text-green-500 {
   --tw-text-opacity: 1 !important;
-  color: rgb(28 176 88 / var(--tw-text-opacity)) !important;
+  color: rgb(34 197 94 / var(--tw-text-opacity)) !important;
 }
 .dark .dark\:text-gray-600 {
   --tw-text-opacity: 1 !important;
@@ -1401,9 +1401,9 @@ blockquote {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity)) !important;
 }
-.dark .dark\:hover\:text-green-500:hover {
+.dark .dark\:hover\:text-green-700:hover {
   --tw-text-opacity: 1 !important;
-  color: rgb(28 176 88 / var(--tw-text-opacity)) !important;
+  color: rgb(21 128 61 / var(--tw-text-opacity)) !important;
 }
 @media (min-width: 640px) {
 
