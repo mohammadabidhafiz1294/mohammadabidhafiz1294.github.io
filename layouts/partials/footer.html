@@ -1,8 +1,15 @@
 <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700 {{ if .IsHome }} pt-2 {{ else }} py-6 {{ end }}">
-  <p class="markdownify">{{ .Site.Params.copyright | markdownify }}
-   
-    
-   </p>
+  <p class="markdownify">{{ .Site.Params.copyright | markdownify }}</p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="{{ `js/main.js` | relURL }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select all anchor tags within the footer
+    const footerLinks = document.querySelectorAll('footer a');
+    // Add target="_blank" to each anchor tag
+    footerLinks.forEach(link => {
+      link.setAttribute('target', '_blank');
+    });
+  });
+</script>

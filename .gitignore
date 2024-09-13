@@ -6,4 +6,5 @@ assets/style.css
 hugo_stats.json
 .hugo_build.lock
 .vscode
+public
 

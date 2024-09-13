@@ -84,4 +84,5 @@
   .page-item.active > .page-link {
     @apply bg-gray-300 pointer-events-none text-gray-800;
   }
+
 }

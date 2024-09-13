@@ -3,7 +3,15 @@
   <span id="typed-tagline"></span>
 </h2>
 <h3 class="mb-6">{{ .Site.Params.profile.location }}</h3>
-<div class="mb-7 flex flex-wrap justify-center">
+<!-- Add the Download CV button -->
+<div class="mb-7">
+  <a href="/path/to/your/cv.pdf" download class="text-bold">
+    <button class="bg-primary rounded-full text-bold">
+      DOWNLOAD CV
+    </button>
+  </a>
+</div>
+<div class="mb-8 flex flex-wrap justify-center">
   {{ range.Site.Params.social.list }}
   <div class="mx-2">
     <a class="text-2xl" href="{{ .url }}" target="_blank">
