@@ -57,10 +57,11 @@ params:
     - item: project
     - item: skill
     - item: hobby
+    - item: contact
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
+    description: This is a demo of the **aafu** theme. It has `light` and `dark` theme.
   experience:
     title: Experiences
     icon: fas fa-briefcase
@@ -164,3 +165,6 @@ params:
       - hobby: Cooking
       - hobby: Hiking
       - hobby: Baking
+  contact:
+    title: Contact
+    icon: fas fa-envelope
