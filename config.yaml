@@ -26,7 +26,7 @@ params:
     name: "Mohammad Abid Hafiz"
     # tagline: "DevOps Engineer"
     location: "Dhaka, Bangladesh"
-    photo: profile.png
+    photo: profile.webp
   social:
     title: Links
     list:
