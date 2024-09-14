@@ -30,25 +30,22 @@ params:
   social:
     title: Links
     list:
-      - icon: fab fa-linkedin-in
+      - icon: fa-brands fa-linkedin-in
         url: "https://www.linkedin.com/in/mohammadabidhafiz1294/"
         title: LinkedIn
-      - icon: fab fa-stack-overflow
-        url: "#"
-        title: StackOverflow
-      - icon: fab fa-github
+      - icon: fa-brands fa-github
         url: "#"
         title: GitHub
-      - icon: fab fa-twitter
+      - icon: fa-brands fa-hashnode
         url: "#"
-        title: Twitter
-      - icon: fab fa-orcid
+        title: Hashnode
+      - icon: fa-brands fa-discord
         url: "#"
-        title: Orcid
-      - icon: ai ai-google-scholar
+        title: Discord
+      - icon: fa-brands fa-google-scholar
         url: "#"
         title: Google Scholar
-      - icon: fab fa-researchgate
+      - icon: fa-brands fa-researchgate
         url: "#"
         title: ResearchGate
   showInAccordion:

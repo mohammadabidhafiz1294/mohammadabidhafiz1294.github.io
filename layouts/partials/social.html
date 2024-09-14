@@ -1,13 +1,18 @@
 <h1 class="mb-3">{{ .Site.Params.profile.name }}</h1>
 <h2 class="mb-5">
+  <p><em>
   <span id="typed-tagline"></span>
+  </em></p>
 </h2>
-<h3 class="mb-6">{{ .Site.Params.profile.location }}</h3>
+<h3 class="mb-6">
+{{ .Site.Params.profile.location }}
+</h3>
 <!-- Add the Download CV button -->
 <div class="mb-7">
   <a href="/path/to/your/cv.pdf" download class="text-bold">
     <button class="bg-primary rounded-full text-bold">
-      DOWNLOAD CV
+      <i class="fa-solid fa-download"></i>
+      <b>DOWNLOAD CV</b>
     </button>
   </a>
 </div>
