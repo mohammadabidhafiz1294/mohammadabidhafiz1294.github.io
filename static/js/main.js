@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var options = {
     strings: [
       'DevOps Engineer',
@@ -14,3 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var typed = new Typed('#typed-tagline', options);
 });
+const { initContactForm } = require('./contact');
+const { accordion } = require('./accordion');
+
+initContactForm();
+accordion();
