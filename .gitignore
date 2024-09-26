@@ -8,4 +8,5 @@ hugo_stats.json
 .vscode
 public
 resources
+_site/
 .env
