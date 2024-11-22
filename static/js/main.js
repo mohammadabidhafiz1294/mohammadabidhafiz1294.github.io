@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   var options = {
     strings: [
-      'DevOps Engineer',
       'Physics Student',
-      'Quantum Computing Enthusiast',
-      'Software Developer'
+      'Software Developer',
+      'DevOps Engineer',
+      'Quantum Enthusiast'
     ],
     typeSpeed: 50,
     backSpeed: 25,

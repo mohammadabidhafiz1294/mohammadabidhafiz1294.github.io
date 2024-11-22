@@ -34,20 +34,20 @@ params:
         url: "https://www.linkedin.com/in/mohammadabidhafiz1294/"
         title: LinkedIn
       - icon: fa-brands fa-github
-        url: "#"
+        url: "https://www.github.com/mohammadabidhafiz1294/"
         title: GitHub
       - icon: fa-brands fa-hashnode
-        url: "#"
+        url: "https://mohammadabidhafiz1294.hashnode.dev/"
         title: Hashnode
-      - icon: fa-brands fa-discord
-        url: "#"
-        title: Discord
+      - icon: fa-brands fa-telegram
+        url: "https://t.me/QC_DEVOPS_learning"
+        title: Telegram
       - icon: fa-brands fa-google-scholar
         url: "#"
         title: Google Scholar
-      - icon: fa-brands fa-researchgate
-        url: "#"
-        title: ResearchGate
+      - icon: fa-brands fa-orcid
+        url: "https://orcid.org/0009-0000-1215-8006"
+        title: Orcid
   showInAccordion:
     - item: aboutme
       expand: true
@@ -61,7 +61,7 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: This is a demo of the **aafu** theme. It has `light` and `dark` theme.
+    description: Final-year *Physics* student at the [*University of Rajshahi*](https://www.ru.ac.bd/) with a passion for DevOps and Quantum Computing. Exploring the intersection of physics and cloud technology, I aim to drive innovation in quantum applications and streamline development processes through DevOps practices.
   experience:
     title: Experiences
     icon: fas fa-briefcase
