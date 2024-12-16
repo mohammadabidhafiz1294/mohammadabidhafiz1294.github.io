@@ -2,7 +2,12 @@
 
 <h4 style="text-decoration: underline;">{{ .degree }}</h4>
 <p {{ if .thesis_title }}class="mb-0" {{ end }}>
-  {{- .dates }} &middot; {{ .college -}}
+  {{- .dates }} &middot;
+  <a href="{{.college_url}}"><i>
+      {{ .college -}}
+    </i>
+  </a>
+
 </p>
 {{ if .thesis_title }}
 {{ if .thesis_url }}

@@ -61,110 +61,156 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: Final-year *Physics* student at the [*University of Rajshahi*](https://www.ru.ac.bd/) with a passion for DevOps and Quantum Computing. Exploring the intersection of physics and cloud technology, I aim to drive innovation in quantum applications and streamline development processes through DevOps practices.
+    description: Final-year *Physics* student at the [*University of Rajshahi*](https://www.ru.ac.bd/) with a passion for DevOps and Quantum Computing. Exploring the intersection of physics and cloud technology, I aim to drive innovation in quantum applications and stream  line development processes through DevOps practices.
   experience:
     title: Experiences
     icon: fas fa-briefcase
     list:
-      - position: Job Title
-        dates: 2019 - *Present*
-        company: Company Name
-        details: |1-
-          - Printed from desktop. Sent [emails](#).
-              - Called people *using* telephone.
-          - Drank water from office cooler.
-          - Ate donuts on people's birthdays.
-      - position: Job Title
-        dates: 2018 - 2019
+      - position: Freelancer
+        dates: 2024 - *Present*
+        company: Hire Me
         url: "#"
-        company: Company Name
+        details: |1-
+          - Cloud Engineering.
+            - System Configuration.
+            - server management.
+            - Package management.
+            - Bash Scripting.
+            - Web deployment.
+            - Database management.
+            - Networking.
+          - DevOps Engineering.
+            - CI/CD.
+            - Automation.
+            - Monitoring.
+            - Containerization.
+            - Orchestration.
+            - Configuration Management.
+            - Infrastructure as Code.
+      - position: Internship
+        dates: 2024 Jun - 2019 Aug
+        url: "https://www.womanium.org/"
+        company: Qumanium
+        details: |1-
+          - Intro. to Quantum Computing.
+          - Quantum Algorithms.
+          - Quantum Circuits.
+          - Quantum Gates.
+          - Quantum Computing Frameworks.
+          - Quantum Circuits Simulation.
+          - Quantum Nerual Network.
+          - Quantum Machine Learning.
   education:
     title: Education
     icon: fas fa-graduation-cap
     list:
-      - degree: Ph.D. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: M.S. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: B.S. in Subject
-        college: University of State-City
-        dates: 2004 - 2009
+      # - degree: Ph.D. in Subject
+      #   college: University of State-City
+      #   dates: 2013 - 2018
+      #   thesis_title: "Effect of humans on other humans: a study of human behavior."
+      #   thesis_url: "#"
+      # - degree: M.S. in Subject
+      #   college: University of State-City
+      #   dates: 2013 - 2018
+      #   thesis_title: "Effect of humans on other humans: a study of human behavior."
+      #   thesis_url: "#"
+      - degree: B.Sc. in Physics
+        college: University of Rajshahi
+        dates: 2020 Jan - 2025 Jun
+      - degree: H.S.C. in Science
+        college: Uayan Uchcha Madhyamik Bidyalaya,Dhaka
+        college_url: "https://udayan.edu.bd/"
+        dates: 2017 Jun - 2019 Jan
   publication:
-    title: Publications
-    icon: fas fa-book
-    format:
-      - date
-      - title
-      - authors
-      - journal
-    types:
-      - Journal Articles
-      - Proceedings
-    list:
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
-      - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Proceedings
+
+    # title: Publications
+    # icon: fas fa-book
+    # format:
+    #   - date
+    #   - title
+    #   - authors
+    #   - journal
+    # types:
+    #   - Journal Articles
+    #   - Proceedings
+    # list:
+    #   - title: >-
+    #       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    #       eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    #     authors: "F Last, F Second, P secondary"
+    #     date: "2018"
+    #     journal: "Journal of Field 52 (16), 9033-9044"
+    #     url: "#"
+    #     type: Journal Articles
+    #   - title: >-
+    #       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    #       eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    #     authors: "F Last, F Second, P secondary"
+    #     date: "2018"
+    #     journal: "Journal of Field 52 (16), 9033-9044"
+    #     url: "#"
+    #     type: Journal Articles
+    #   - title: >-
+    #       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    #       eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    #     authors: "F Last, F Second, P secondary"
+    #     date: "2018"
+    #     journal: "Journal of Field 52 (16), 9033-9044"
+    #     url: "#"
+    #     type: Proceedings
   project:
     title: Projects
     icon: fas fa-project-diagram
     list:
-      - title: Project 1
-        url: "#"
-        description: Description of the project
-      - title: Project 2
-        url: "#"
-        description: Description of the project
-      - title: Project 3
-        url: "#"
-        description: Description of the project
-      - title: Project 4
-        url: "#"
-        description: Description of the project
+      - title: Mathpix alternative OCI Latex Project
+        url: "https://github.com/mohammadabidhafiz1294/Mathpix-OCR-Alternative"
+        description: Mathpix alternative Convert images to text using Pix2Text OCR and PyQt5 GUI with screen snap feature.
+      - title: React Project
+        url: "https://github.com/mohammadabidhafiz1294/Photo-gallery-with-react"
+        description: Photo Gallery with react fetching data from google Firebase.
+      - title: ChatGPT Telegram Bot - Python
+        url: "https://github.com/mohammadabidhafiz1294/chatgpt-tele-bot"
+        description: Unleash Conversational AI - ChatGPT Telegram Bot 🤖🚀 GitHub Repository.
+      - title: Sample Plates for server configuration & deployment process
+        url: "https://github.com/mohammadabidhafiz1294/Sample_plates"
+        description: Server management & configuration tools samples templates are shown here ! Use those and contribute.
+      - title: Pennylane AI challanges & CodeBooks
+        url: "https://github.com/mohammadabidhafiz1294/Pennylane-AI-Quantum-Computing"
+        description: contains all my exercises, challenges & Projects in Pennylane-AI framework for Quantum Computing.
   skill:
     title: Skills
     panelId: skill-panel
     icon: fas fa-cogs
     list:
-      - skill: "Skill 1, Skill 2"
+      - skill: "Programming Languages(Python, Go, JavaScript)"
         skillrating: 90
-      - skill: Skill 3
+      - skill: "Linux System Administration & Configuration"
         skillrating: 80
-      - skill: Skill 4
+      - skill: "Cloud Computing(AWS, GCP, Azure)"
+        skillrating: 60
+      - skill: "Containerization (Docker)"
+        skillrating: 90
+      - skill: "Orchestration (Kubernetes)"
+        skillrating: 60
+      - skill: "CI/CD (Jenkins, GitLab)"
         skillrating: 50
+      - skill: "Configuration Management (Ansible)"
+        skillrating: 70
+      - skill: "Infactructue as Code (Terraform)"
+        skillrating: 80
+      - skill: "Version Control (Git)"
+        skillrating: 90
+      - skill: "Monitoring (Prometheus, Grafana)"
+        skillrating: 60
+      - skill: "Quantum Computing framework (Qiskit, Classiq, Pennylane)"
+        skillrating: 70
   hobby:
     title: Hobbies
     icon: fas fa-gamepad
     list:
-      - hobby: Cooking
-      - hobby: Hiking
-      - hobby: Baking
+      - hobby: Configuration Making
+      - hobby: Reading - Geopolitics & Historical Fiction
+      - hobby: Travelling
   contact:
     title: Contact
     icon: fas fa-envelope
