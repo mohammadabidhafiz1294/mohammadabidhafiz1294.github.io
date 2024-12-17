@@ -3,9 +3,11 @@
 <div class="experience-item flex justify-between items-center">
   <div>
     <p {{ if .details }}class="mb-0" {{ end }}>
-      {{ .dates | markdownify }} &middot; <strong>{{ .company }}</strong>
+      {{ .dates | markdownify }} &middot; {{ if .url }} <a
+        href="{{ .url }}"><strong>{{ .company }}</strong></a>{{ else }}<strong>{{ .company }}</strong>{{ end }}
     </p>
   </div>
+
   <div class="mx-2">
     {{ if .urls }}
     <ul class="flex flex-col space-y-4">
