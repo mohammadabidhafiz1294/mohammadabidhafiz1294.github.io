@@ -123,6 +123,7 @@ params:
       - degree: B.Sc. in Physics
         college: University of Rajshahi
         dates: 2020 Jan - 2025 Jun
+        college_url: "https://www.ru.ac.bd/"
       - degree: H.S.C. in Science
         college: Uayan Uchcha Madhyamik Bidyalaya,Dhaka
         college_url: "https://udayan.edu.bd/"
