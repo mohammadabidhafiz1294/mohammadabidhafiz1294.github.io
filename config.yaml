@@ -67,9 +67,15 @@ params:
     icon: fas fa-briefcase
     list:
       - position: Freelancer
-        dates: 2024 - *Present*
-        company: Hire Me
-        url: "#"
+        dates: 2024 Jun - *Present*
+        company: Hire Me ⇾
+        urls:
+          - title: UpWork
+            url_icon: fa-brands fa-upwork
+            url: "#"
+          - title: PeoplePerHour
+            url_icon: fa-regular fa-handshake
+            url: "#"
         details: |1-
           - Cloud Engineering.
             - System Configuration.
@@ -84,7 +90,7 @@ params:
             - Automation.
             - Monitoring.
             - Containerization.
-            - Orchestration.
+            - Orchestration.  
             - Configuration Management.
             - Infrastructure as Code.
       - position: Internship

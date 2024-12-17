@@ -1,14 +1,24 @@
-{{ range.Site.Params.experience.list }}
+{{ range .Site.Params.experience.list }}
 <h4 style="text-decoration: underline;">{{ .position }}</h4>
-<p {{if .details }}class="mb-0" {{ end }}>
-  {{ .dates | markdownify }} &middot; {{ if .url }}
-  <a href="{{ .url }}"><em>{{ .company }}</em></a>
-  {{ else }} <em>{{ .company }}</em> {{ end }}
-</p>
+<div class="experience-item flex justify-between items-center">
+  <div>
+    <p {{ if .details }}class="mb-0" {{ end }}>
+      {{ .dates | markdownify }} &middot; <strong>{{ .company }}</strong>
+    </p>
+  </div>
+  <div class="mx-2">
+    {{ if .urls }}
+    <ul class="flex flex-col space-y-4">
+      {{ range .urls }}
+      <li><a href="{{ .url }}" target="_blank"><i class="{{ .url_icon }}"></i> <em>{{ .title }}</em></a></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</div>
 {{ if .details }}
 <div class="prose prose-stone dark:prose-invert max-w-none">
   {{ .details | markdownify }}
 </div>
 {{ end }}
-
 {{ end }}
