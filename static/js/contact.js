@@ -27,11 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
         // Send the form data to the Google Apps Script Web App using Fetch API
-        fetch("https://script.google.com/macros/s/AKfycbygLPNsoCE3ewq3mZOTwjl6i0Dww_un23Y7YXTJZ-I50lPRzhKVLNdirEPCG_No6dWjZQ/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbz4XWhIwo5h5eba1x1zxHzBhguGoNK_7BBLT3DOwOXYfgK-b__CxhlmlA64xJkB90Y5Tg/exec", {
             method: 'POST',
-            mode: 'no-cors',
+            // mode: 'no-cors',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: JSON.stringify({
                 name: name,
