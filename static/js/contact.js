@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Send the form data to the Google Apps Script Web App using Fetch API
         fetch("https://script.google.com/macros/s/AKfycbwPlBFPErBNj_95anZw2L12zxwKeXur3UO-Qh4UH_dBAGnO-QTFseMSf-n6vSKEyEV5/exec", {
             method: 'POST',
-            // mode: 'no-cors',
+            mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/json'
             },
