@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                service_id: process.env.EMAILJS_SERVICE_ID,
-                template_id: process.env.EMAILJS_TEMPLATE_ID,
-                user_id: process.env.EMAILJS_USER_ID,
+                service_id: 'EMAILJS_SERVICE_ID_PLACEHOLDER',
+                template_id: 'EMAILJS_TEMPLATE_ID_PLACEHOLDER',
+                user_id: 'EMAILJS_USER_ID_PLACEHOLDER',
                 template_params: {
                     name: name,
                     email: email,
