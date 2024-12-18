@@ -32,9 +32,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.128.0
-      EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
-      EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
-      EMAILJS_USER_ID: ${{ secrets.EMAILJS_USER_ID }}
     steps:
       - name: Install Hugo CLI
         run: |
@@ -51,6 +48,11 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Replace placeholders with secrets
+        run: |
+          sed -i 's/EMAILJS_SERVICE_ID_PLACEHOLDER/${{ secrets.EMAILJS_SERVICE_ID }}/g' static/js/contact.js
+          sed -i 's/EMAILJS_TEMPLATE_ID_PLACEHOLDER/${{ secrets.EMAILJS_TEMPLATE_ID }}/g' static/js/contact.js
+          sed -i 's/EMAILJS_USER_ID_PLACEHOLDER/${{ secrets.EMAILJS_USER_ID }}/g' static/js/contact.js
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
