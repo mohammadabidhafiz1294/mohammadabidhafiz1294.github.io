@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var typed = new Typed('#typed-tagline', options);
 });
-const { initContactForm } = require('./contact');
-const { accordion } = require('./accordion');
+
+import { initContactForm } from './contact.js';
+import { accordion } from './accordion.js';
+console.log("main.js loaded");
 
 initContactForm();
 accordion();

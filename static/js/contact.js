@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const name = formData.get('name');
         const email = formData.get('email');
         const message = formData.get('message');
-
         // Validate email
         if (!validateEmail(email)) {
             alert("Please enter a valid email address.");
@@ -26,40 +25,44 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please fill out all fields.");
             return;
         }
-        // Send the form data to the Google Apps Script Web App using Fetch API
-        fetch("https://script.google.com/macros/s/AKfycbyBkKxmfBa8IJvCON6397Y-qur7SJ-PNsa7fFkSfIqeeHOYnVrWgVD-V9S-Y7QK87oFvw/exec?", {
+
+        // Send email using EmailJS REST API
+        fetch('https://api.emailjs.com/api/v1.0/email/send', {
             method: 'POST',
-            mode: 'no-cors',
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                name: name,
-                email: email,
-                message: message
-            })
-        })
-            .then(data => {
-                if (data.status === 0) {
-                    successMessage.style.display = "block";
-                    setTimeout(function () {
-                        successMessage.style.display = "none";
-                    }, 2000);
-                    form.reset();
-                } else {
-                    throw new Error('Failed to submit the form');
+                service_id: process.env.EMAILJS_SERVICE_ID,
+                template_id: process.env.EMAILJS_TEMPLATE_ID,
+                user_id: process.env.EMAILJS_USER_ID,
+                template_params: {
+                    name: name,
+                    email: email,
+                    message: message
                 }
             })
-            .catch(error => {
-                console.error('Error:', error);
-                if (errorMessage) {
-                    errorMessage.style.display = "block";
-                    setTimeout(function () {
-                        errorMessage.style.display = "none";
-                    }, 2000);
-                } else {
-                    alert("An error occurred: " + error.message);
-                }
-            });
+        }).then(function (response) {
+            if (response.ok) {
+                console.log('SUCCESS!', response.statusText);
+                successMessage.classList.remove('hidden');
+                errorMessage.classList.add('hidden');
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 2000); form.reset();
+            } else {
+                return response.json().then(function (error) {
+                    console.log('FAILED...', error);
+                    successMessage.classList.add('hidden');
+                    errorMessage.classList.remove('hidden');
+                });
+            }
+        }).catch(function (error) {
+            console.log('FAILED...', error);
+            successMessage.classList.add('hidden');
+            errorMessage.classList.remove('hidden');
+        });
     });
 });
+
+

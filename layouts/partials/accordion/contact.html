@@ -23,8 +23,14 @@
         </div>
         <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send</button>
       </form>
-      <div class="mt-8" id="successMessage" style="display: none;">Your message has been sent successfully!</div>
-      <div id="errorMessage" style="display:none;">An error occurred. Please try again.</div>
+      <div class="mt-8">
+        <div id="successMessage" class="hidden text-green-700">
+          Success! Your message has been sent successfully.
+        </div>
+        <div id="errorMessage" class="hidden text-red-700">
+          Error! An error occurred. Please try again.
+        </div>
+      </div>
     </div>
 
     <div class="mt-8">
@@ -34,4 +40,4 @@
     </div>
   </div>
 </div>
-<script type="module" src="{{ `js/contact.js` | relURL }}"></script>
+<script src="{{ `js/contact.js` | relURL }}"></script>
