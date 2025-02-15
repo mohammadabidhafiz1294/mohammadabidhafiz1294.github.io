@@ -1,11 +1,11 @@
 <h2 class="mb-3">{{ .Site.Params.profile.name }}</h2>
 <h3 class="mb-5">
   <p><em>
-  <span id="typed-tagline"></span>
-  </em></p>
+      <span id="typed-tagline"></span>
+    </em></p>
 </h3>
 <h4 class="mb-6">
-{{ .Site.Params.profile.location }}
+  {{ .Site.Params.profile.location }}
 </h4>
 <!-- Add the Download CV button -->
 <div class="mb-7">
@@ -25,3 +25,24 @@
   </div>
   {{ end }}
 </div>
+
+<!-- Include Typed.js library -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Initialize Typed instance -->
+<script>
+  var options = {
+    strings: [
+      'Physics Student',
+      'Software Developer',
+      'DevOps Engineer',
+      'Quantum Enthusiast'
+    ],
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 2000,
+    loop: true
+  };
+
+  var typed = new Typed('#typed-tagline', options);
+</script>

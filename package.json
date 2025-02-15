@@ -26,6 +26,7 @@
     "dotenv": "^16.4.5",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
-    "firebase": "^10.13.1"
+    "firebase": "^11.3.1",
+    "typed.js": "^2.1.0"
   }
 }
